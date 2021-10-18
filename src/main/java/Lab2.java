@@ -1,9 +1,6 @@
 import static utils.LogUtils.*;
 import static utils.ScanUtils.*;
-
 import math.functional.interfaces.*;
-
-import java.util.Scanner;
 
 public class Lab2 {
     public static void main(String[] args) {
