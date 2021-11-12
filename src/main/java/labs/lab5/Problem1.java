@@ -10,9 +10,9 @@ public class Problem1 {
     public static void main(String[] args) {
         var wordsCounts = new HashMap<String, Integer>();
 
-        for (String word : scanStrings("Enter words: ")) {
-            Integer count = firstNonNull(wordsCounts.get(word), 0) + 1;
-            wordsCounts.put(word, count);
+        for (String word : scanStrings("Enter words (separated by whitespace: ")) {
+            Integer currentCount = firstNonNull(wordsCounts.get(word), 0);
+            wordsCounts.put(word, currentCount + 1);
         }
 
         log(wordsCounts);
