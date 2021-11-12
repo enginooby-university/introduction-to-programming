@@ -10,11 +10,12 @@ public class Problem2 {
 
     public static void main(String[] args) {
         for (int i = 0; i < 100; i++) {
-            log(addChar('f', Random(1, template.length() - 1)));
+            char randomChar = (char) Random('a', 'z');
+            log(generateTypo(randomChar, Random(1, template.length() - 1)));
         }
     }
 
-    public static String addChar(char ch, int position) {
+    public static String generateTypo(char ch, int position) {
         return template.substring(0, position) + ch + template.substring(position);
     }
 }
