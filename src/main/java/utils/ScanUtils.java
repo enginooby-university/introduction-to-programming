@@ -22,4 +22,15 @@ public class ScanUtils {
         input += scanner.nextLine();
         return input;
     }
+
+    public static String[] scanStrings(String message, String splitter) {
+        return scanString(message).split(splitter);
+    }
+
+    /**
+     * Scan and return list of strings splitted by " ".
+     */
+    public static String[] scanStrings(String message) {
+        return scanStrings(message, " ");
+    }
 }
