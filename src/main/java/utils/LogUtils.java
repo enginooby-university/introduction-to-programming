@@ -6,7 +6,7 @@ public class LogUtils {
     }
 
     public static void logf(Object message) {
-        System.out.printf((String) message);
+        System.out.printf(message.toString());
     }
 
     public static void log(String format, Object... args) {

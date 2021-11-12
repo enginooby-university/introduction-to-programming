@@ -7,9 +7,10 @@ public class Problem2 {
     public static void main(String[] args) {
         String template = "I will never spam my friends again.";
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 1; i <= 100; i++) {
             char randomChar = (char) Random('a', 'z');
-            int randomPos = Random(1, template.length() - 1);
+            int randomPos = Random(1, 8);
+            logf(i + ". ");
             log(template.substring(0, randomPos) + randomChar + template.substring(randomPos));
         }
     }
